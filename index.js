@@ -1,24 +1,3 @@
-const wrapper = document.querySelector('.swiper-wrapper')
-
-// const glideSlidesEl = document.querySelector('.glide__slides');
-//
-for (let i = 0; i < 5; i++) {
-	const slide = document.createElement('div')
-
-	slide.classList.add('swiper-slide')
-
-	const imageWrapper = document.createElement('div')
-	imageWrapper.classList.add('image__wrapper')
-
-	const img = document.createElement('img')
-	img.src = `./images/${i + 1}.jpg`
-
-	imageWrapper.appendChild(img)
-
-	slide.appendChild(imageWrapper)
-	wrapper.appendChild(slide)
-}
-
 new Swiper('.swiper', {
 	loop: true,
 	pagination: {
